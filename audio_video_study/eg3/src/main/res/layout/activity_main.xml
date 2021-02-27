@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_actionbar"
+        layout="@layout/include_action_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_med"
+        android:gravity="center"
+        android:text="在 Android 平台使用 Camera API 进行视频的采集，分别使用 SurfaceView、TextureView 来预览 Camera 数据，取到 NV21 的数据回调"
+        android:textColor="@color/text_color_orange" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/margin_med"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:onClick="surfaceViewClick"
+        android:text="surfaceview" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_med"
+        android:background="@color/orange"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="TextureViewClick"
+        android:text="TextureView" />
+
+</LinearLayout>
