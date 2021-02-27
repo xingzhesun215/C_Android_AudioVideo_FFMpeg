@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <Button
+        android:id="@+id/bt_access_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="access_field_Click"
+        android:text="jni访问java成员变量" />
+
+    <Button
+        android:id="@+id/bt_access_static_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="access_static_field_Click"
+        android:text="jni访问java静态变量" />
+
+    <Button
+        android:id="@+id/bt_access_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="access_method_Click"
+        android:text="jni访问java成员方法" />
+
+    <Button
+        android:id="@+id/bt_access_static_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="access_static_method_Click"
+        android:text="jni访问java静态方法" />
+
+    <Button
+        android:id="@+id/bt_access_constructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="access_constructor_Click"
+        android:text="jni访问java成员变量" />
+</LinearLayout>
