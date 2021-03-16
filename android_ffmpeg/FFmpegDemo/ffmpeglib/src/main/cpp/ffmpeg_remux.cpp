@@ -23,7 +23,9 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
     {
         av_log_set_callback(ffp_log_callback_brief);
     }
+    //输入文件地址
     const char *in_filename = env->GetStringUTFChars(input_path, 0);
+    //输出文件地址
     const char *out_filename = env->GetStringUTFChars(output_path, 0);
     LOGI("Input_path=%s, Output_path=%s", in_filename, out_filename);
     AVOutputFormat *ofmt = NULL;
@@ -34,12 +36,13 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
     int *stream_mapping = NULL;
     int stream_mapping_size = 0;
 
+    //打开文件
     if ((ret = avformat_open_input(&ifmt_ctx, in_filename, 0, 0)) < 0) {
         LOGE("Could not open input file '%s'", in_filename);
         avformat_close_input(&ifmt_ctx);
         return ret;
     }
-
+    //找到流信息
     if ((ret = avformat_find_stream_info(ifmt_ctx, 0)) < 0) {
         LOGE("Failed to retrieve input stream information");
         avformat_close_input(&ifmt_ctx);
