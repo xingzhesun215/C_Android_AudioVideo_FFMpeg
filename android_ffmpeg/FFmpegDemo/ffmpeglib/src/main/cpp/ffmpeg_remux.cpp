@@ -15,17 +15,12 @@ extern "C"
 JNIEXPORT int JNICALL
 Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring input_path,
                                                    jstring output_path) {
-    if(use_log_report)
-    {
+    if (use_log_report) {
         av_log_set_callback(ffp_log_callback_report);
-    }
-    else
-    {
+    } else {
         av_log_set_callback(ffp_log_callback_brief);
     }
-    //输入文件地址
     const char *in_filename = env->GetStringUTFChars(input_path, 0);
-    //输出文件地址
     const char *out_filename = env->GetStringUTFChars(output_path, 0);
     LOGI("Input_path=%s, Output_path=%s", in_filename, out_filename);
     AVOutputFormat *ofmt = NULL;
@@ -35,24 +30,25 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
     int stream_index = 0;
     int *stream_mapping = NULL;
     int stream_mapping_size = 0;
-
-    //打开文件
+    //打开多媒体数据并且获取一些信息
     if ((ret = avformat_open_input(&ifmt_ctx, in_filename, 0, 0)) < 0) {
         LOGE("Could not open input file '%s'", in_filename);
         avformat_close_input(&ifmt_ctx);
         return ret;
     }
-    //找到流信息
+    //读一些包（packets ），然后从中提取初流的信息
     if ((ret = avformat_find_stream_info(ifmt_ctx, 0)) < 0) {
         LOGE("Failed to retrieve input stream information");
         avformat_close_input(&ifmt_ctx);
         return ret;
     }
 
-    LOGI("Index=%d, duration=%lld",ifmt_ctx->nb_streams, ifmt_ctx->duration);
-
+    LOGI("Index=%d, duration=%lld", ifmt_ctx->nb_streams, ifmt_ctx->duration);
+    //打印关于输入或输出格式的详细信
     av_dump_format(ifmt_ctx, 1, in_filename, 0);
 
+    //负责分配输出 AVFormatContext。ffmpeg有各种各样的 Context ，其功能是管理各种各样的模块。
+    // 例如有一个输出文件：test.mp4，使用 avformat_alloc_output_context2 函数就可以根据文件名分配合适的 AVFormatContext 管理结构。
     avformat_alloc_output_context2(&ofmt_ctx, NULL, NULL, out_filename);
     if (!ofmt_ctx) {
         LOGE("Could not create output context\n");
@@ -64,7 +60,7 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
     LOGI("Output format=%s", ofmt_ctx->oformat->name);
 
     stream_mapping_size = ifmt_ctx->nb_streams;
-    stream_mapping = (int *)av_mallocz_array(stream_mapping_size, sizeof(*stream_mapping));
+    stream_mapping = (int *) av_mallocz_array(stream_mapping_size, sizeof(*stream_mapping));
     if (!stream_mapping) {
         ret = AVERROR(ENOMEM);
         avformat_close_input(&ifmt_ctx);
@@ -124,6 +120,8 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
             avformat_free_context(ofmt_ctx);
             av_freep(&stream_mapping);
             return ret;
+        } else {
+            LOGI("Open output file ret=%d", ret);
         }
     }
 
@@ -137,14 +135,14 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
         av_freep(&stream_mapping);
         return ret;
     }
-
+    LOGI("avformat_write_header ret=%d", ret);
     while (1) {
         AVStream *in_stream, *out_stream;
         ret = av_read_frame(ifmt_ctx, &pkt);
         if (ret < 0)
             break;
 
-        in_stream  = ifmt_ctx->streams[pkt.stream_index];
+        in_stream = ifmt_ctx->streams[pkt.stream_index];
         if (pkt.stream_index >= stream_mapping_size ||
             stream_mapping[pkt.stream_index] < 0) {
             av_packet_unref(&pkt);
@@ -175,7 +173,9 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
             return ret;
         }
         av_packet_unref(&pkt);
+        LOGI("avformat_write_header ing");
     }
+    LOGI("avformat_write_header finish");
     av_write_trailer(ofmt_ctx);
 
     avformat_close_input(&ifmt_ctx);
