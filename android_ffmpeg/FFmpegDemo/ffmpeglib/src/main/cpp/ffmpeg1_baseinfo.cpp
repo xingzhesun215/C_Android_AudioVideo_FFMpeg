@@ -12,7 +12,7 @@ extern "C" {
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_sun_ffmpeglib_FFmpegInfoUtils_stringFromJNI(JNIEnv *env, jclass clazz) {
+Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_stringFromJNI(JNIEnv *env, jclass clazz) {
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
@@ -33,7 +33,7 @@ Java_com_sun_ffmpeglib_FFmpegInfoUtils_stringFromJNI(JNIEnv *env, jclass clazz) 
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_sun_ffmpeglib_FFmpegInfoUtils_avcodecInfo(JNIEnv *env, jclass clazz) {
+Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_avcodecInfo(JNIEnv *env, jclass clazz) {
     char info[40000] = {0};
     //初始化所有组件(注册所有编解码器)
     av_register_all();
@@ -84,7 +84,7 @@ Java_com_sun_ffmpeglib_FFmpegInfoUtils_avcodecInfo(JNIEnv *env, jclass clazz) {
  */
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_sun_ffmpeglib_FFmpegInfoUtils_avfilterInfo(JNIEnv *env, jclass clazz) {
+Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_avfilterInfo(JNIEnv *env, jclass clazz) {
     char info[40000] = {0};
     //注册所有AVFilter
     //ffmpeg过滤器 滤镜
@@ -146,7 +146,7 @@ Java_com_sun_ffmpeglib_FFmpegInfoUtils_avfilterInfo(JNIEnv *env, jclass clazz) {
  */
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_sun_ffmpeglib_FFmpegInfoUtils_avformatInfo(JNIEnv *env, jclass clazz) {
+Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_avformatInfo(JNIEnv *env, jclass clazz) {
     char info[40000] = {0};
 
     av_register_all();
@@ -169,7 +169,7 @@ Java_com_sun_ffmpeglib_FFmpegInfoUtils_avformatInfo(JNIEnv *env, jclass clazz) {
  */
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_sun_ffmpeglib_FFmpegInfoUtils_protocolInfo(JNIEnv *env, jclass clazz) {
+Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_protocolInfo(JNIEnv *env, jclass clazz) {
     char info[40000] = {0};
     av_register_all();
 

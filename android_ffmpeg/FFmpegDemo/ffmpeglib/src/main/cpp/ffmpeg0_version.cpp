@@ -13,7 +13,7 @@ extern "C" {
 extern "C"
 JNIEXPORT jstring
 
-JNICALL Java_com_sun_ffmpeglib_FFmpegVersion_ffmpegversion(JNIEnv *env, jclass clazz) {
+JNICALL Java_com_sun_ffmpeglib_FFmpeg0Version_ffmpegversion(JNIEnv *env, jclass clazz) {
     char strBuffer[1024 * 4] = {0};
     strcat(strBuffer, "libavcodec : ");
     strcat(strBuffer, AV_STRINGIFY(LIBAVCODEC_VERSION));

@@ -1,6 +1,6 @@
 package com.sun.ffmpeglib;
 
-public class FFmpegVersion {
+public class FFmpeg2Log {
 
     // Used to load the 'native-lib' library on application startup.
     static {
@@ -14,5 +14,5 @@ public class FFmpegVersion {
         System.loadLibrary("swscale");
     }
 
-    public static native String ffmpegversion();
+    public static native String log();
 }

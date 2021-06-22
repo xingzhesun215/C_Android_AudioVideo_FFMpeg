@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sun.ffmpegdemo">
-    
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:requestLegacyExternalStorage="true"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -21,7 +21,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FFmpegInfoActivity" />
+        <activity android:name=".FFmpeg0VersionActivity" />
+        <activity android:name=".FFmpeg1BaseInfoActivity" />
+        <activity android:name=".FFmpeg2LogActivity" />
+        <activity android:name=".FFmpeg3FileActivity" />
+        <activity android:name=".FFmpeg4VersionActivity" />
+        <activity android:name=".FFmpeg5VersionActivity" />
+        <activity android:name=".FFmpeg6VersionActivity" />
+        <activity android:name=".FFmpeg7VersionActivity" />
+        <activity android:name=".FFmpeg8VersionActivity" />
         <activity android:name=".FFmpegRemuxActivity" />
     </application>
 

@@ -1,6 +1,6 @@
 package com.sun.ffmpeglib;
 
-public class FFmpegInfoUtils {
+public class FFmpeg1BaseInfo {
 
   // Used to load the 'native-lib' library on application startup.
   static {

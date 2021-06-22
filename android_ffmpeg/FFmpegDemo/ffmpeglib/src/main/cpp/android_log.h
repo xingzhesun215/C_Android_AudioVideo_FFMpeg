@@ -12,7 +12,7 @@ static int use_log_report = 0;
 // 打印可变参数
 #define VLOG(level, TAG, ...)    ((void)__android_log_vprint(level, TAG, __VA_ARGS__))
 
-#define ALOG(level, TAG, ...)    ((void)__android_log_print(level, TAG, __VA_ARGS__))
+#define ALOG(level, TAG, ...)          ((void)__android_log_print(level, TAG, __VA_ARGS__))
 
 #define LOGE(format, ...)  __android_log_print(ANDROID_LOG_ERROR, FF_LOG_TAG, format, ##__VA_ARGS__)
 #define LOGI(format, ...)  __android_log_print(ANDROID_LOG_INFO,  FF_LOG_TAG, format, ##__VA_ARGS__)

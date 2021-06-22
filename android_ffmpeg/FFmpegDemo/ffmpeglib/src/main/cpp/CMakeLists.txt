@@ -46,11 +46,14 @@ add_library( # Sets the name of the library.
         # Sets the library as a shared library.
         SHARED
 
-        ffmpeg_info.cpp
+        ffmpeg0_version.cpp
+        ffmpeg1_baseinfo.cpp
+        ffmpeg2_log.cpp
+        ffmpeg3_file.cpp
 
         # Provides a relative path to your source file(s).
         ffmpeg_remux.cpp
-        ffmpeg_version.cpp)
+        )
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by

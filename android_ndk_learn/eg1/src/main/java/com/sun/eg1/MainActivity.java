@@ -14,10 +14,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         tv_result = this.findViewById(R.id.tv_result);
         tv_result.setText(stringFromJNI());
+
+        StuInfo stuInfo = new StuInfo(1000, "孙观勇", 29, "信息安全1班");
+        setStuInfo(stuInfo);
     }
 
     static {
         System.loadLibrary("native-lib");
     }
     public native String stringFromJNI();
+
+    /**
+     * 设置学生信息
+     *
+     * @param stuInfo
+     * @return
+     */
+    public native void setStuInfo(StuInfo stuInfo);
 }
