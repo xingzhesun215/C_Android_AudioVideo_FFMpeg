@@ -23,6 +23,10 @@ public class FFmpeg3FileActivity extends AppCompatActivity {
 
     }
 
+    public void fileListClick(View view) {
+        FFmpeg3File.dirList("/sdcard/test_av");
+    }
+
     public void renameClick(View view) {
         FFmpeg3File.renameFile("123.png","456.jpg");
     }

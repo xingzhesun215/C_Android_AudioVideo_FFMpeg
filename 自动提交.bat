@@ -9,3 +9,5 @@ git commit -m "%commit_msg%"
 :: push to remote repository
 git push origin master
 :: make a pause 
+
+timeout 5

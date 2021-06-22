@@ -14,7 +14,9 @@ public class FFmpeg3File {
         System.loadLibrary("swscale");
     }
 
-    public static native void renameFile(String oldName,String newName);
+    public static native void renameFile(String oldName, String newName);
 
-    public static native void deltenFile(String filePath);
+    public static native void deleteFile(String filePath);
+
+    public static native void dirList(String filePath);
 }

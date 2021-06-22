@@ -9,6 +9,14 @@
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:onClick="fileListClick"
+        android:text="文件夹遍历" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:onClick="renameClick"
         android:text="重命名" />
 
