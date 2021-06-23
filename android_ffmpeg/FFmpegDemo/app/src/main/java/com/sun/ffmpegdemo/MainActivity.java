@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     public static final int CAMERA_PERIMISSION_CODE = 11;
 
     public void RequestPermission() {
-        String[] perms = new String[]{Manifest.permission.INTERNET,Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO};
+        String[] perms = new String[]{Manifest.permission.INTERNET, Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO};
         if (PermissionUtils.hasPermissions(this, perms)) {
             startPreview();
         } else {
@@ -61,7 +61,11 @@ public class MainActivity extends AppCompatActivity {
         FFmpeg4avMetaActivity.startActivity(this);
     }
 
-    public void ffmpegExtractAudioClick(View view) {
+    public void ffmpeg5ExtractAudioClick(View view) {
         FFmpeg5ExtractAudioActivity.startActivity(this);
+    }
+
+    public void ffmpeg6ExtractVideoClick(View view) {
+        FFmpeg6ExtractVideoActivity.startActivity(this);
     }
 }

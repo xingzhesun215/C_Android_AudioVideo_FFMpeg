@@ -10,31 +10,33 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.sun.ffmpeglib.FFmpeg0Version;
-import com.sun.ffmpeglib.FFmpeg5ExtractAudio;
+import com.sun.ffmpeglib.FFmpeg6ExtractVideo;
 
 import java.io.File;
 
 
-public class FFmpeg5ExtractAudioActivity extends AppCompatActivity {
+public class FFmpeg6ExtractVideoActivity extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ffmpeg5_extractaudio);
+        setContentView(R.layout.activity_ffmpeg6_extractvideo);
+
+
     }
 
-    public void extractAudioClick(View view) {
-        File file = new File("/sdcard/test_av/111.aac");
+    public void extractVideoClick(View view) {
+        File file = new File("/sdcard/test_av/333.h264");
         if (file != null && file.exists()) {
             file.delete();
         }
-        FFmpeg5ExtractAudio.extractAudio("/sdcard/test_av/Amao.mp4");
-        //此份ffmpeg不支持对http协议
-//        FFmpeg5ExtractAudio.extractAudio("http://vfx.mtime.cn/Video/2019/03/17/mp4/190317150237409904.mp4");
+        //部分视频能成功,不够健壮,后续修改
+        FFmpeg6ExtractVideo.extractVideo("/sdcard/test_av/Amao.mp4");
+
     }
 
     public static void startActivity(Context context) {
-        context.startActivity(new Intent(context, FFmpeg5ExtractAudioActivity.class));
+        context.startActivity(new Intent(context, FFmpeg6ExtractVideoActivity.class));
     }
 }
