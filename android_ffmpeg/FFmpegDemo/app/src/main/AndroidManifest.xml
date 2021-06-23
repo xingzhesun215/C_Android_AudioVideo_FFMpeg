@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
@@ -27,8 +28,8 @@
         <activity android:name=".FFmpeg1BaseInfoActivity" />
         <activity android:name=".FFmpeg2LogActivity" />
         <activity android:name=".FFmpeg3FileActivity" />
-        <activity android:name=".FFmpeg4VersionActivity" />
-        <activity android:name=".FFmpeg5VersionActivity" />
+        <activity android:name=".FFmpeg4avMetaActivity" />
+        <activity android:name=".FFmpeg5ExtractAudioActivity" />
         <activity android:name=".FFmpeg6VersionActivity" />
         <activity android:name=".FFmpeg7VersionActivity" />
         <activity android:name=".FFmpeg8VersionActivity" />

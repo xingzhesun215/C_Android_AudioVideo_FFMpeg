@@ -1,6 +1,5 @@
 #include <jni.h>
 #include <string>
-#include <list>
 
 extern "C" {
 #include "include/libavcodec/avcodec.h"
@@ -19,19 +18,20 @@ extern "C" {
 //FFmpeg 关闭目录：avio_close_dir()
 
 // FFmpeg 删除文件操作
-void ffmpegDelFile() {
+int ffmpegDelFile(const char *filePath) {
     int ret;
-    ret = avpriv_io_delete("1.txt");  // 在项目目录下创建的文件（测试时需要创建好）
+    ret = avpriv_io_delete(filePath);  // 在项目目录下创建的文件（测试时需要创建好）
     printf("Del File Code : %d \n", ret);
     if (ret < 0) {
         av_log(NULL, AV_LOG_ERROR, "Failed to delete file \n");
     } else {
         av_log(NULL, AV_LOG_INFO, "Delete File Success！\n ");
     }
+    return ret;
 }
 
 // FFmpeg 重命名或移动文件
-void ffmpegMoveFile(char *src, char *dst) {
+int ffmpegMoveFile(const char *src,const char *dst) {
     int ret;
     ret = avpriv_io_move(src, dst);
     printf("Move File Code : %d \n", ret);
@@ -41,6 +41,7 @@ void ffmpegMoveFile(char *src, char *dst) {
     } else {
         av_log(NULL, AV_LOG_INFO, "Success Move File %s!\n", src);
     }
+    return ret;
 }
 
 
@@ -66,6 +67,7 @@ void ffmpegDir(char *dir) {
     }
     LOGE("list 4");
     av_log(NULL, AV_LOG_INFO, "Open Dir Success!");
+
 
     while (1) {
         ret = avio_read_dir(dirCtx, &dirEntry);
@@ -100,7 +102,8 @@ Java_com_sun_ffmpeglib_FFmpeg3File_renameFile(JNIEnv *env, jclass clazz, jstring
     LOGE("老文件名 %s", old_nameP);
     LOGE("新文件名 %s", new_nameP);
 
-
+    LOGE("the result of rename is %d",
+         ffmpegMoveFile(old_nameP, new_nameP));
 }
 
 extern "C"
@@ -109,8 +112,12 @@ JNICALL extern "C"
 JNIEXPORT void JNICALL
 Java_com_sun_ffmpeglib_FFmpeg3File_deleteFile(JNIEnv *env, jclass clazz, jstring file_path) {
 
-
+    const char *path = env->GetStringUTFChars(file_path, nullptr);
+    LOGE("delete path = %s", path);
+    LOGE("delete result= %d", ffmpegDelFile(path));
 }
+
+
 extern "C"
 
 JNICALL extern "C"

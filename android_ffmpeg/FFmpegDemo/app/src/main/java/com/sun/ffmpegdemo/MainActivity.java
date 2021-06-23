@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public static final int CAMERA_PERIMISSION_CODE=11;
+    public static final int CAMERA_PERIMISSION_CODE = 11;
 
     public void RequestPermission() {
-        String[] perms = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA,Manifest.permission.RECORD_AUDIO};
+        String[] perms = new String[]{Manifest.permission.INTERNET,Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.RECORD_AUDIO};
         if (PermissionUtils.hasPermissions(this, perms)) {
             startPreview();
         } else {
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     @AfterPermissionGranted(CAMERA_PERIMISSION_CODE)
     public void startPreview() {
-        Log.e("ME","已授权");
+        Log.e("ME", "已授权");
     }
 
     public void ffmpeg0VersionClick(View view) {
@@ -55,5 +55,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void ffmpeg3FileClick(View view) {
         FFmpeg3FileActivity.startActivity(this);
+    }
+
+    public void ffmpeg4MetaClick(View view) {
+        FFmpeg4avMetaActivity.startActivity(this);
+    }
+
+    public void ffmpegExtractAudioClick(View view) {
+        FFmpeg5ExtractAudioActivity.startActivity(this);
     }
 }

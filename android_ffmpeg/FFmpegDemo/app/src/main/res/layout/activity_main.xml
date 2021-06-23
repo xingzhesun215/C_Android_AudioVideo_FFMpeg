@@ -39,6 +39,20 @@
             android:layout_marginTop="10dp"
             android:onClick="ffmpeg3FileClick"
             android:text="FFmpeg文件操作" />
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="ffmpeg4MetaClick"
+            android:text="FFmpeg音视频meta" />
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="ffmpegExtractAudioClick"
+            android:text="FFmpeg ExtractAudio抽取音频" />
 
         <Button
             android:id="@+id/remux_btn"

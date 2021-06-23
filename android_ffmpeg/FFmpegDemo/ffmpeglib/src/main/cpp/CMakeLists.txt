@@ -50,6 +50,8 @@ add_library( # Sets the name of the library.
         ffmpeg1_baseinfo.cpp
         ffmpeg2_log.cpp
         ffmpeg3_file.cpp
+        ffmpeg4_avmeta.cpp
+        ffmpeg5_extractaudio.cpp
 
         # Provides a relative path to your source file(s).
         ffmpeg_remux.cpp

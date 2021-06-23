@@ -28,11 +28,11 @@ public class FFmpeg3FileActivity extends AppCompatActivity {
     }
 
     public void renameClick(View view) {
-        FFmpeg3File.renameFile("123.png","456.jpg");
+        FFmpeg3File.renameFile("/sdcard/test_av/image4.jpg", "/sdcard/test_av/image6.jpg");
     }
 
     public void deleteClick(View view) {
-
+        FFmpeg3File.deleteFile("/sdcard/test_av/image.jpg");
     }
 
     public static void startActivity(Context context) {
