@@ -33,6 +33,9 @@
         <activity android:name=".FFmpeg6ExtractVideoActivity" />
         <activity android:name=".FFmpeg7mp4toflvActivity" />
         <activity android:name=".FFmpeg8VideoCutActivity" />
+        <activity android:name=".FFmpeg9YuvToH264Activity" />
+        <activity android:name=".FFmpeg10VideoCutActivity" />
+        <activity android:name=".FFmpeg11VideoCutActivity" />
         <activity android:name=".FFmpegRemuxActivity" />
     </application>
 

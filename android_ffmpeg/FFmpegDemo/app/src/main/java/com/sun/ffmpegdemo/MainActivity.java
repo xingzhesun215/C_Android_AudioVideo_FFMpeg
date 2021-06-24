@@ -75,4 +75,7 @@ public class MainActivity extends AppCompatActivity {
     public void ffmpeg8Mp4CutClick(View view) {
         FFmpeg8VideoCutActivity.startActivity(this);
     }
+    public void ffmpeg9YuvToH264Click(View view) {
+        FFmpeg9YuvToH264Activity.startActivity(this);
+    }
 }

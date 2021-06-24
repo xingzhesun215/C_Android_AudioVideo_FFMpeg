@@ -313,13 +313,6 @@ void extractVideo(const char* filePath) {
     video_index = av_find_best_stream(fmt_ctx, AVMEDIA_TYPE_VIDEO, -1, -1, NULL, 0);
 
 
-//    for (int i = 0; i < fmt_ctx->nb_streams; i++) {
-//        if (fmt_ctx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
-//            video_index = i;
-//            break;
-//        }
-//    }
-
     LOGE("Video Stream Index2 = %d", video_index);
 
     // 检查发现视频流的结果
