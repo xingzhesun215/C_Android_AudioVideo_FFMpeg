@@ -68,4 +68,8 @@ public class MainActivity extends AppCompatActivity {
     public void ffmpeg6ExtractVideoClick(View view) {
         FFmpeg6ExtractVideoActivity.startActivity(this);
     }
+
+    public void ffmpeg7Mp4toFlvClick(View view) {
+        FFmpeg7mp4toflvActivity.startActivity(this);
+    }
 }

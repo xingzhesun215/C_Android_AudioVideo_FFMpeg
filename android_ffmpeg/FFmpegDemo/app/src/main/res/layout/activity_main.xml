@@ -60,6 +60,13 @@
             android:layout_margin="10dp"
             android:onClick="ffmpeg6ExtractVideoClick"
             android:text="FFmpeg ExtractVideo抽取视频" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="ffmpeg7Mp4toFlvClick"
+            android:text="FFmpeg mp4转flv" />
 
         <Button
             android:id="@+id/remux_btn"

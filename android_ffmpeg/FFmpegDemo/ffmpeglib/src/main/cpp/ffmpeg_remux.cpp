@@ -127,7 +127,7 @@ Java_com_sun_ffmpeglib_FFmpegRemuxUtils_remux(JNIEnv *env, jclass clazz, jstring
 
     ret = avformat_write_header(ofmt_ctx, NULL);
     if (ret < 0) {
-        LOGE("Error occurred when opening output file, ret=%d\n", ret);
+        LOGE("Error occurred when opening output file, ret=%d\n", ret);//无法写入视频头 -22参数异常
         avformat_close_input(&ifmt_ctx);
         if (ofmt_ctx && !(ofmt->flags & AVFMT_NOFILE))
             avio_closep(&ofmt_ctx->pb);

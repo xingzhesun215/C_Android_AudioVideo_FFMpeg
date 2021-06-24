@@ -31,7 +31,7 @@
         <activity android:name=".FFmpeg4avMetaActivity" />
         <activity android:name=".FFmpeg5ExtractAudioActivity" />
         <activity android:name=".FFmpeg6ExtractVideoActivity" />
-        <activity android:name=".FFmpeg7VersionActivity" />
+        <activity android:name=".FFmpeg7mp4toflvActivity" />
         <activity android:name=".FFmpeg8VersionActivity" />
         <activity android:name=".FFmpegRemuxActivity" />
     </application>
