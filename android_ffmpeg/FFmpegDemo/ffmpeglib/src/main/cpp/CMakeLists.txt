@@ -54,6 +54,7 @@ add_library( # Sets the name of the library.
         ffmpeg5_extractaudio.cpp
         ffmpeg6_extractvideo.cpp
         ffmpeg7_mp4toflv.cpp
+        ffmpeg8_mp4cut.cpp
 
         # Provides a relative path to your source file(s).
         ffmpeg_remux.cpp

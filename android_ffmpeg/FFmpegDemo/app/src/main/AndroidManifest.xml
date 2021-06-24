@@ -32,7 +32,7 @@
         <activity android:name=".FFmpeg5ExtractAudioActivity" />
         <activity android:name=".FFmpeg6ExtractVideoActivity" />
         <activity android:name=".FFmpeg7mp4toflvActivity" />
-        <activity android:name=".FFmpeg8VersionActivity" />
+        <activity android:name=".FFmpeg8VideoCutActivity" />
         <activity android:name=".FFmpegRemuxActivity" />
     </application>
 

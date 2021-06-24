@@ -67,6 +67,13 @@
             android:layout_margin="10dp"
             android:onClick="ffmpeg7Mp4toFlvClick"
             android:text="FFmpeg mp4转flv" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="ffmpeg8Mp4CutClick"
+            android:text="FFmpeg mp4裁剪" />
 
         <Button
             android:id="@+id/remux_btn"

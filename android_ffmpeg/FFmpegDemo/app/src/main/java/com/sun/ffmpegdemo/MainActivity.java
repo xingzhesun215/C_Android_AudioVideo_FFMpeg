@@ -72,4 +72,7 @@ public class MainActivity extends AppCompatActivity {
     public void ffmpeg7Mp4toFlvClick(View view) {
         FFmpeg7mp4toflvActivity.startActivity(this);
     }
+    public void ffmpeg8Mp4CutClick(View view) {
+        FFmpeg8VideoCutActivity.startActivity(this);
+    }
 }
