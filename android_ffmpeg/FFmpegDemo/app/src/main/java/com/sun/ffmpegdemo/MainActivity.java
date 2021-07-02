@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.sun.ffmpegdemo.permission.AfterPermissionGranted;
 import com.sun.ffmpegdemo.permission.PermissionUtils;
+import com.sun.ffmpeglib.FFmpeg10VideotoJpg;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -77,5 +78,8 @@ public class MainActivity extends AppCompatActivity {
     }
     public void ffmpeg9YuvToH264Click(View view) {
         FFmpeg9YuvToH264Activity.startActivity(this);
+    }
+    public void ffmpeg10VideoToJpgClick(View view) {
+        FFmpeg10VideoTojpgActivity.startActivity(this);
     }
 }
