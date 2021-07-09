@@ -31,6 +31,7 @@ Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_stringFromJNI(JNIEnv *env, jclass clazz) 
  * int priv_data_size：私有数据的大小
  */
 
+
 extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_avcodecInfo(JNIEnv *env, jclass clazz) {
@@ -61,6 +62,8 @@ Java_com_sun_ffmpeglib_FFmpeg1BaseInfo_avcodecInfo(JNIEnv *env, jclass clazz) {
         sprintf(info, "%s[%10s]\n", info, temp->long_name);
         temp = temp->next;
     }
+
+
 
     return env->NewStringUTF(info);
 }
