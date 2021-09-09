@@ -6,13 +6,14 @@
       <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="PLATFORM" />
+        <option name="disableWrapperSourceDistributionNotification" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/eg1" />
-            <option value="$PROJECT_DIR$/eg10" />
+            <option value="$PROJECT_DIR$/eg11" />
             <option value="$PROJECT_DIR$/eg3" />
             <option value="$PROJECT_DIR$/eg4" />
             <option value="$PROJECT_DIR$/eg5" />
