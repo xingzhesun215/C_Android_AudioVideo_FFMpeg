@@ -58,14 +58,18 @@ Java_com_sun_eg11_GifHandler_getWidth(JNIEnv *env, jclass type, jlong ndkGif) {
     GifFileType* gifFileType= (GifFileType *) ndkGif;
     return gifFileType->SWidth;
 
-}extern "C"
+}
+
+extern "C"
 JNIEXPORT jint JNICALL
 Java_com_sun_eg11_GifHandler_getHeight(JNIEnv *env, jclass type, jlong ndkGif) {
 
     GifFileType* gifFileType= (GifFileType *) ndkGif;
     return gifFileType->SHeight;
 
-} extern "C"
+}
+
+extern "C"
 JNIEXPORT jlong JNICALL
 Java_com_sun_eg11_GifHandler_loadGif(JNIEnv *env, jclass type, jstring path_) {
     const char *path = env->GetStringUTFChars(path_, 0);

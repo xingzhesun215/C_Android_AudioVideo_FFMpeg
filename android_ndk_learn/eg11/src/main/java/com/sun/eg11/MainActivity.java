@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 
+import androidx.activity.ComponentActivity;
+
 import com.sun.eg11.permission.PermissionUtils;
 
 import java.io.File;
@@ -35,6 +37,8 @@ public class MainActivity extends Activity {
         String[] perms = new String[]{ Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
         if (!PermissionUtils.hasPermissions(this, perms)) {
             PermissionUtils.requestPermissions(this,  PERMISSION_CODE, perms);
+        }else{
+            javaLoadGif(null);
         }
     }
 

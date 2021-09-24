@@ -1,0 +1,3 @@
+include ':yuv_lib'
+include ':app'
+rootProject.name = "YuvTest"
