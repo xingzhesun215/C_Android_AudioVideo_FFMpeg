@@ -1,9 +1,3 @@
 # ninja log v5
-1	168	654609594	CMakeFiles/music-player.dir/ffmpeg_voicer.c.o	e9f3fd7b479d0ad9
-170	282	654609594	F:/ndk_new/MusicPlayer/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmusic-player.so	990e534cf5c7099
-4	195	654609804	CMakeFiles/music-player.dir/ffmpeg_voicer.c.o	e9f3fd7b479d0ad9
-195	287	654609804	F:/ndk_new/MusicPlayer/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmusic-player.so	990e534cf5c7099
-4	178	654609900	CMakeFiles/music-player.dir/ffmpeg_voicer.c.o	e9f3fd7b479d0ad9
-178	267	654609900	F:/ndk_new/MusicPlayer/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmusic-player.so	990e534cf5c7099
-4	227	654610298	CMakeFiles/music-player.dir/ffmpeg_voicer.c.o	e9f3fd7b479d0ad9
-227	346	654610299	F:/ndk_new/MusicPlayer/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmusic-player.so	990e534cf5c7099
+1	277	654611565	CMakeFiles/music-player.dir/ffmpeg_voicer.c.o	706506d6044f8e0f
+280	376	654611565	F:/Sun_Studio/C_Android_AudioVideo_FFMpeg/MusicPlayer/app/build/intermediates/cmake/debug/obj/arm64-v8a/libmusic-player.so	e0a075c4942f2b41

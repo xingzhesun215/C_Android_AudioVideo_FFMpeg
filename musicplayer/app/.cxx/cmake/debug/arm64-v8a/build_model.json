@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
-    "cmakeServerLogFile": "F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a\\cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cxx\\debug\\arm64-v8a",
+    "cmakeArtifactsBaseFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+    "cmakeServerLogFile": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a\\cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cxx\\debug\\arm64-v8a",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,7 +15,7 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+      "buildRoot": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
       "cmakeToolchain": "E:\\AllSdk\\sdk\\ndk\\16.1.4479499\\build\\cmake\\android.toolchain.cmake",
       "cmakeExecutable": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
       "variables": [
@@ -53,7 +53,7 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "F:\\ndk_new\\MusicPlayer\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a"
+          "value": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\build\\intermediates\\cmake\\debug\\obj\\arm64-v8a"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
@@ -70,14 +70,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+  "cxxBuildFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
   "info": {
     "abi": "ARM64_V8A",
     "bitness": 64,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
+  "originalCxxBuildFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\arm64-v8a",
   "variant": {
     "buildSystemArgumentList": [],
     "buildTargetSet": [],
@@ -95,12 +95,12 @@
         "ninjaExe": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
       },
       "cmakeToolchainFile": "E:\\AllSdk\\sdk\\ndk\\16.1.4479499\\build\\cmake\\android.toolchain.cmake",
-      "cxxFolder": "F:\\ndk_new\\MusicPlayer\\app\\.cxx",
+      "cxxFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx",
       "gradleModulePathName": ":app",
-      "intermediatesFolder": "F:\\ndk_new\\MusicPlayer\\app\\build\\intermediates",
-      "makeFile": "F:\\ndk_new\\MusicPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
-      "moduleBuildFile": "F:\\ndk_new\\MusicPlayer\\app\\build.gradle",
-      "moduleRootFolder": "F:\\ndk_new\\MusicPlayer\\app",
+      "intermediatesFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\build\\intermediates",
+      "makeFile": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+      "moduleBuildFile": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\build.gradle",
+      "moduleRootFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
@@ -163,12 +163,13 @@
       ],
       "ndkVersion": "16.1.4479499",
       "project": {
-        "compilerSettingsCacheFolder": "F:\\ndk_new\\MusicPlayer\\.cxx",
-        "cxxFolder": "F:\\ndk_new\\MusicPlayer\\.cxx",
+        "compilerSettingsCacheFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\.cxx",
+        "cxxFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\.cxx",
+        "ideBuildTargetAbi": "arm64-v8a,armeabi-v7a,armeabi",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "F:\\ndk_new\\MusicPlayer",
+        "rootBuildGradleFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer",
         "sdkFolder": "E:\\AllSdk\\sdk"
       },
       "splitsAbiFilterSet": [],
@@ -207,11 +208,11 @@
         "SYSTEM": {}
       }
     },
-    "objFolder": "F:\\ndk_new\\MusicPlayer\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "objFolder": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\build\\intermediates\\cmake\\debug\\obj",
     "variantName": "debug",
     "validAbiList": [
-      "ARMEABI_V7A",
-      "ARM64_V8A"
+      "ARM64_V8A",
+      "ARMEABI_V7A"
     ]
   }
 }

@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = E:\AllSdk\sdk\cmake\3.10.2.4988404\bin\cmake.exe -HF:\ndk_new\MusicPlayer\app\src\main\cpp -BF:\ndk_new\MusicPlayer\app\.cxx\cmake\debug\armeabi-v7a
+  command = E:\AllSdk\sdk\cmake\3.10.2.4988404\bin\cmake.exe -HF:\Sun_Studio\C_Android_AudioVideo_FFMpeg\MusicPlayer\app\src\main\cpp -BF:\Sun_Studio\C_Android_AudioVideo_FFMpeg\MusicPlayer\app\.cxx\cmake\debug\armeabi-v7a
   description = Re-running CMake...
   generator = 1
 

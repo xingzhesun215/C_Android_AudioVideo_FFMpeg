@@ -1,7 +1,7 @@
 Executable : E:\AllSdk\sdk\cmake\3.10.2.4988404\bin\ninja.exe
 arguments : 
 -C
-F:\ndk_new\MusicPlayer\app\.cxx\cmake\debug\armeabi-v7a
+F:\Sun_Studio\C_Android_AudioVideo_FFMpeg\MusicPlayer\app\.cxx\cmake\debug\armeabi-v7a
 music-player
 jvmArgs : 
 

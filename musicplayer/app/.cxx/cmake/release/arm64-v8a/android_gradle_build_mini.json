@@ -1,18 +1,18 @@
 {
   "buildFiles": [
-    "F:\\ndk_new\\MusicPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
     "E:\\AllSdk\\sdk\\ndk\\16.1.4479499\\build\\cmake\\android.toolchain.cmake"
   ],
   "cleanCommands": [
-    "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\release\\arm64-v8a\" clean"
+    "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\release\\arm64-v8a\" clean"
   ],
-  "buildTargetsCommand": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\release\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\release\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "music-player-Release-arm64-v8a": {
       "artifactName": "music-player",
-      "buildCommand": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\ndk_new\\MusicPlayer\\app\\.cxx\\cmake\\release\\arm64-v8a\" music-player",
+      "buildCommand": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\release\\arm64-v8a\" music-player",
       "abi": "arm64-v8a",
-      "output": "F:\\ndk_new\\MusicPlayer\\app\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libmusic-player.so"
+      "output": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libmusic-player.so"
     }
   }
 }

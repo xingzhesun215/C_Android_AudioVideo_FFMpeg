@@ -1,4 +1,4 @@
-# Install script for directory: F:/ndk_new/MusicPlayer/app/src/main/cpp
+# Install script for directory: F:/Sun_Studio/C_Android_AudioVideo_FFMpeg/MusicPlayer/app/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/ndk_new/MusicPlayer/app/.cxx/cmake/debug/arm64-v8a/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/Sun_Studio/C_Android_AudioVideo_FFMpeg/MusicPlayer/app/.cxx/cmake/debug/arm64-v8a/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
