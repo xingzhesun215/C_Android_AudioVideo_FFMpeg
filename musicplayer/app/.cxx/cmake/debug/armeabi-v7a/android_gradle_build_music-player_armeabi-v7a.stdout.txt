@@ -1,0 +1,40 @@
+ninja: Entering directory `F:\ndk_new\MusicPlayer\app\.cxx\cmake\debug\armeabi-v7a'
+[1/2] Building C object CMakeFiles/music-player.dir/ffmpeg_voicer.c.o
+F:/ndk_new/MusicPlayer/app/src/main/cpp/ffmpeg_voicer.c:50:29: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+if (pFormatCtx->streams[i]->codec->codec_type == AVMEDIA_TYPE_AUDIO) {
+                            ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/include/libavformat/avformat.h:892:5: note: 'codec' has been explicitly marked deprecated here
+    attribute_deprecated
+    ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/./include\libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/ffmpeg_voicer.c:61:67: warning: 'codec' is deprecated [-Wdeprecated-declarations]
+AVCodecContext *pCodeCtx = pFormatCtx->streams[audio_stream_idx]->codec;
+                                                                  ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/include/libavformat/avformat.h:892:5: note: 'codec' has been explicitly marked deprecated here
+    attribute_deprecated
+    ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/./include\libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/ffmpeg_voicer.c:135:7: warning: 'avcodec_decode_audio4' is deprecated [-Wdeprecated-declarations]
+ret = avcodec_decode_audio4(pCodeCtx, frame, &got_frame, packet);
+      ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/./include\libavcodec/avcodec.h:4943:1: note: 'avcodec_decode_audio4' has been explicitly marked deprecated here
+attribute_deprecated
+^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/./include\libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/ffmpeg_voicer.c:166:1: warning: 'av_free_packet' is deprecated [-Wdeprecated-declarations]
+av_free_packet(packet);
+^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/./include\libavcodec/avcodec.h:4649:1: note: 'av_free_packet' has been explicitly marked deprecated here
+attribute_deprecated
+^
+F:/ndk_new/MusicPlayer/app/src/main/cpp/./include\libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+4 warnings generated.
+[2/2] Linking C shared library F:\ndk_new\MusicPlayer\app\build\intermediates\cmake\debug\obj\armeabi-v7a\libmusic-player.so
