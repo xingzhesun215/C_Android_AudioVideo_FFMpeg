@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "E:\\AllSdk\\sdk\\ndk\\16.1.4479499\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "music-player-Debug-armeabi-v7a": {
+      "artifactName": "music-player",
+      "buildCommand": "E:\\AllSdk\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\.cxx\\cmake\\debug\\armeabi-v7a\" music-player",
+      "abi": "armeabi-v7a",
+      "output": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a\\libmusic-player.so"
+    }
+  }
+}

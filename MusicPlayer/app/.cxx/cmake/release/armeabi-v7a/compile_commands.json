@@ -1,0 +1,7 @@
+[
+{
+  "directory": "F:/Sun_Studio/C_Android_AudioVideo_FFMpeg/MusicPlayer/app/.cxx/cmake/release/armeabi-v7a",
+  "command": "E:\\AllSdk\\sdk\\ndk\\16.1.4479499\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=armv7-none-linux-androideabi --gcc-toolchain=E:/AllSdk/sdk/ndk/16.1.4479499/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/AllSdk/sdk/ndk/16.1.4479499/sysroot -Dmusic_player_EXPORTS -IF:/Sun_Studio/C_Android_AudioVideo_FFMpeg/MusicPlayer/app/src/main/cpp/./include  -isystem E:/AllSdk/sdk/ndk/16.1.4479499/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=15 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC   -o CMakeFiles\\music-player.dir\\ffmpeg_voicer.c.o   -c F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\src\\main\\cpp\\ffmpeg_voicer.c",
+  "file": "F:\\Sun_Studio\\C_Android_AudioVideo_FFMpeg\\MusicPlayer\\app\\src\\main\\cpp\\ffmpeg_voicer.c"
+}
+]
