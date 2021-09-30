@@ -1,0 +1,7 @@
+[
+{
+  "directory": "F:/ndk_new/OpenSLES_Study/app/.cxx/cmake/release/arm64-v8a",
+  "command": "E:\\AllSdk\\sdk\\ndk\\16.1.4479499\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android --gcc-toolchain=E:/AllSdk/sdk/ndk/16.1.4479499/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=E:/AllSdk/sdk/ndk/16.1.4479499/sysroot  -Dnative_lib_EXPORTS -isystem E:/AllSdk/sdk/ndk/16.1.4479499/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem E:/AllSdk/sdk/ndk/16.1.4479499/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem E:/AllSdk/sdk/ndk/16.1.4479499/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem E:/AllSdk/sdk/ndk/16.1.4479499/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\native-lib.dir\\native-lib.cpp.o -c F:\\ndk_new\\OpenSLES_Study\\app\\src\\main\\cpp\\native-lib.cpp",
+  "file": "F:\\ndk_new\\OpenSLES_Study\\app\\src\\main\\cpp\\native-lib.cpp"
+}
+]

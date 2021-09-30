@@ -1,0 +1,5 @@
+# ninja log v5
+1	459	654677002	CMakeFiles/native-lib.dir/native-lib.cpp.o	bae044d2cfb8e97c
+461	786	654677002	F:/ndk_new/OpenSLES_Study/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	dd5fab02be2cad4f
+5	196	654684491	CMakeFiles/native-lib.dir/native-lib.cpp.o	bae044d2cfb8e97c
+196	296	654684491	F:/ndk_new/OpenSLES_Study/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	dd5fab02be2cad4f
