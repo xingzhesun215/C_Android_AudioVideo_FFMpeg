@@ -23,6 +23,5 @@ ffmpeg+audiotrack播放音频文件
 7,YuvTest
 测试自己编译的libyuv各功能
 
-
 8,OPenSLES_Demo
 最简单的opensles播放pcm文件
